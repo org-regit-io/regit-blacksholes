@@ -1,0 +1,24 @@
+[package]
+name        = "regit-blackscholes"
+version     = "1.0.0"
+edition     = "2021"
+rust-version = "1.70"
+license     = "Apache-2.0"
+description = "Zero-dependency Black-Scholes options pricing engine. Pure Rust."
+repository  = "https://github.com/org-regit-io/regit-blackscholes"
+
+[features]
+default = []
+simd    = ["dep:wide"]
+
+[dependencies]
+wide = { version = "0.7", optional = true }
+
+[dev-dependencies]
+criterion = { version = "0.5", features = ["html_reports"] }
+proptest  = "1.4"
+approx    = "0.5"
+
+[[bench]]
+name    = "blackscholes"
+harness = false
