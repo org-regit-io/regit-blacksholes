@@ -1,11 +1,13 @@
 [package]
 name        = "regit-blackscholes"
-version     = "1.0.2"
+version     = "1.0.3"
 edition     = "2021"
 rust-version = "1.70"
 license     = "Apache-2.0"
 description = "Zero-dependency Black-Scholes options pricing engine. Pure Rust."
 repository  = "https://github.com/org-regit-io/regit-blackscholes"
+keywords    = ["black-scholes", "blackscholes", "options", "finance", "derivatives"]
+categories  = ["finance", "mathematics", "science"]
 
 [features]
 default = []
